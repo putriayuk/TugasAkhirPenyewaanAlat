@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="299.0" fitWidth="430.0">
+         <image>
+            <Image url="@tahun-baru-2017-dibuka-saat-tahun-baru-gunung-gunung-ini-batasi-jumlah-pendaki-Hw4R5CtrV6.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="32.0" prefHeight="45.0" prefWidth="215.0" text="Sahabat Pendaki" textFill="#111010">
+         <font>
+            <Font name="BROMO" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="130.0">
+         <image>
+            <Image url="@mountain-306236_640.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="login" layoutX="173.0" layoutY="127.0" mnemonicParsing="false" onAction="#buttonlogin" opacity="0.73" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: black;" text="lOG IN" textFill="WHITE">
+         <font>
+            <Font name="BADUY" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="195.0" layoutY="210.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Signature of the Ancient" size="66.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="627.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.PESANController">
+   <children>
+      <AnchorPane layoutX="263.0" layoutY="-3.0" prefHeight="63.0" prefWidth="134.0" style="-fx-background-color: #c2bbbb;">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="50.0" layoutY="7.0">
+               <image>
+                  <Image url="@shopping-cart-3_icon-icons.com_63429.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="38.0" prefWidth="110.0" text="Pesanan" textFill="#141414">
+               <font>
+                  <Font name="Cheri" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="14.0" layoutY="78.0">
+         <image>
+            <Image url="@Tas_Gunung___Tas_Carrier_Eiger_1249_Eliptic_Solaries_45_Orig.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="139.0" layoutY="78.0">
+         <image>
+            <Image url="@gambar-gunung-kompor-portabel-4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="261.0" layoutY="78.0">
+         <image>
+            <Image url="@matras-yoga-matras-camping-outdoor-1481457524-23109121-f46513efe8b8c269a1794af84060d09d-product.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="383.0" layoutY="78.0">
+         <image>
+            <Image url="@78106618_l.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="503.0" layoutY="78.0">
+         <image>
+            <Image url="@125948_58844f9e-a135-11e4-afea-29dd4908a8c2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="77.0" layoutY="241.0">
+         <image>
+            <Image url="@w16017rn_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="249.0" layoutY="241.0">
+         <image>
+            <Image url="@Sandal%20Gunung%20Anak%20Laki-Laki%20CBR6%20MDC%20008.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="110.0" layoutX="438.0" layoutY="241.0">
+         <image>
+            <Image url="@tenda-navijo-68007-bestway-product.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="20.0" layoutY="414.0" prefHeight="140.0" prefWidth="272.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="121.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="134.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nama" />
+            <Label text="Alamat" GridPane.rowIndex="1" />
+            <Label text="No.Telp" GridPane.rowIndex="2" />
+            <Label text="Jenis Kelamin" GridPane.rowIndex="4" />
+            <TextField fx:id="editnama" GridPane.columnIndex="1" />
+            <TextField fx:id="editalamat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="edittelp" prefWidth="155.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="117.0" text="Tanggal Pemesanan" GridPane.rowIndex="3" />
+            <ComboBox fx:id="jeniskelamin" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="edittanggal" promptText="Tanggal/Bulan/Tahun" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <ImageView fitHeight="38.0" fitWidth="84.0">
+         <image>
+            <Image url="@mountain-306236_640.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="21.0" prefHeight="25.0" prefWidth="110.0" text="Sahabat Pendaki">
+         <font>
+            <Font name="BROMO" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonsimpan" layoutX="118.0" layoutY="569.0" mnemonicParsing="false" onAction="#simpan" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #6781dd;" text="BOOKING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <JFXTextArea fx:id="taBarang" editable="false" layoutX="299.0" layoutY="414.0" maxWidth="314.0" minWidth="307.0" prefWidth="307.0">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="379.0" layoutY="383.0" text="DETAIL BARANG" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="162.0" text="Rp.20.000/sewa" textFill="#f2f2f2" />
+      <Label layoutX="153.0" layoutY="162.0" text="Rp.10.000/sewa" textFill="#fffefe" />
+      <Label layoutX="278.0" layoutY="162.0" text="Rp.5.000/sewa" textFill="#f5f5f5" />
+      <Label layoutX="397.0" layoutY="162.0" text="Rp.15.000/sewa" textFill="WHITE" />
+      <Label layoutX="517.0" layoutY="162.0" text="Rp.15.000/sewa" textFill="#fcfafa" />
+      <Label layoutX="91.0" layoutY="323.0" text="Rp.20.000/sewa" textFill="#fcf8f8" />
+      <Label layoutX="263.0" layoutY="323.0" text="Rp.15.000/sewa" textFill="#fffbfb" />
+      <Label layoutX="452.0" layoutY="323.0" text="Rp.20.000/sewa" textFill="#f8f5f5" />
+      <TextField fx:id="jmlhc" layoutX="45.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <Button fx:id="buttonproses" layoutX="548.0" layoutY="371.0" mnemonicParsing="false" onAction="#proses" style="-fx-background-color: #6781dd;" text="PROSES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="jmlhk" layoutX="162.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlhm" layoutX="292.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlhsb" layoutX="414.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlht" layoutX="534.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlhtu" layoutX="108.0" layoutY="340.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlhdal" layoutX="280.0" layoutY="340.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="jmlhda" layoutX="468.0" layoutY="340.0" prefHeight="25.0" prefWidth="50.0" promptText="Jumlah">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
