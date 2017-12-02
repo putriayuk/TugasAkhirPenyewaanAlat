@@ -4,4 +4,6 @@
 ![alt text](pbo3.PNG)
 ![alt text](pbo4.PNG)
 ![alt text](pbo5.PNG)
+Jikadata belum terisi penuh
+![alt text](pbo7.PNG)
 ![alt text](pbo6.PNG)
